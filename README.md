@@ -1,73 +1,290 @@
-# React + TypeScript + Vite
+# 🚀 Aman Singh — AI Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, cinematic developer portfolio built to showcase my journey as an **AI Engineer, Machine Learning Engineer, and Full Stack AI Developer**.
 
-Currently, two official plugins are available:
+This portfolio combines a futuristic 3D-inspired interface with smooth animations, interactive components, and a production-focused architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌐 Portfolio
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 Live Website:  
+https://aman1803ami.github.io/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 👨‍💻 About Me
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Hi, I'm **Aman Singh** — an AI Engineer passionate about building intelligent systems that solve real-world problems.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+I specialize in:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- 🤖 AI-powered applications
+- 🧠 Machine Learning & Deep Learning
+- 💬 LLM applications and AI agents
+- ⚙️ Automation systems
+- 🌐 Full-stack development
+
+My focus is creating production-ready AI solutions using modern engineering practices.
+
+---
+
+# ✨ Features
+
+### 🎨 Premium Interactive UI
+
+- Dark futuristic interface
+- Large cinematic typography
+- Gradient text effects
+- Smooth page transitions
+- Responsive layouts
+
+---
+
+### 🧲 Advanced Animations
+
+Built with Framer Motion:
+
+- Scroll-based animations
+- Magnetic hover interactions
+- Character reveal text effects
+- Sticky project stacking cards
+- Infinite technology marquee
+
+---
+
+# 🛠️ Tech Stack
+
+### Frontend
+
+- React 18
+- TypeScript
+- Tailwind CSS
+- Vite
+
+### Animations
+
+- Framer Motion
+
+### UI
+
+- Lucide React
+- Custom Components
+
+### Deployment
+
+- GitHub Pages
+
+---
+
+# 📂 Project Structure
+
+
+src/
+
+├── components/
+
+│   ├── HeroSection.tsx
+
+│   ├── AboutSection.tsx
+
+│   ├── TechMarquee.tsx
+
+│   ├── ExpertiseSection.tsx
+
+│   ├── ProjectsSection.tsx
+
+│   └── ContactSection.tsx
+
+
+├── components/ui/
+
+│   ├── FadeIn.tsx
+
+│   ├── Magnet.tsx
+
+│   ├── AnimatedText.tsx
+
+│   └── ProjectCard.tsx
+
+
+├── data/
+
+│   ├── projects.ts
+
+│   └── skills.ts
+
+
+├── App.tsx
+
+└── main.tsx
+
+
+
+---
+
+# 🚀 Featured Projects
+
+
+## 📄 Smart Doc Assistant
+
+AI-powered document intelligence assistant.
+
+Features:
+
+- PDF understanding
+- NLP processing
+- OCR fallback system
+- Intelligent summarization
+
+
+Tech:
+
+`Python` `NLP` `OCR` `LLM`
+
+Repository:
+
+https://github.com/Aman1803ami/smart-doc-assistant
+
+
+---
+
+## 🧠 Image Classification CNN
+
+Deep learning computer vision project.
+
+Features:
+
+- CNN architecture
+- Image classification
+- Dropout optimization
+- Data augmentation
+
+Accuracy:
+
+98.2%
+
+
+Tech:
+
+`Python` `TensorFlow` `Keras`
+
+
+Repository:
+
+https://github.com/Aman1803ami/cnn-machine-learning-
+
+
+---
+
+## 🤖 Math Agent
+
+Conversational AI reasoning assistant.
+
+Features:
+
+- AI agent workflow
+- Prompt engineering
+- Mathematical reasoning
+- Reduced hallucination responses
+
+
+Tech:
+
+`Python` `LLM` `AI Agents`
+
+
+Repository:
+
+https://github.com/Aman1803ami/math_agent
+
+
+---
+
+## 📊 Daily Financial Summary
+
+Automation system replacing manual reporting.
+
+Features:
+
+- Report generation
+- Data processing
+- Workflow automation
+
+
+Tech:
+
+`Python` `Automation` `Data Processing`
+
+
+Repository:
+
+https://github.com/Aman1803ami/daily_financial_summary
+
+
+---
+
+# ⚡ Installation
+
+
+Clone repository:
+
+```bash
+git clone https://github.com/Aman1803ami/Aman1803ami.github.io.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Move into project:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd Aman1803ami.github.io
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build:
+
+```bash
+npm run build
+```
+
+---
+
+# 📬 Connect With Me
+
+
+GitHub:
+
+https://github.com/Aman1803ami
+
+
+LinkedIn:
+
+https://linkedin.com/in/aman-singh-5082711b8
+
+
+Email:
+
+ami1803aman@gmail.com
+
+
+---
+
+# ⭐ Purpose
+
+This portfolio represents my work in Artificial Intelligence, software engineering, and automation.
+
+The goal is simple:
+
+> Build intelligent systems that turn complex problems into reliable solutions.
+
+---
